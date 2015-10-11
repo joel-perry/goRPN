@@ -20,39 +20,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="wKm-cm-IUn">
-                                <rect key="frame" x="24" y="40" width="552" height="22.5"/>
+                                <rect key="frame" x="24" y="40" width="552" height="34.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SDJ-VL-McW">
-                                        <rect key="frame" x="0.0" y="0.0" width="138" height="22.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="34.5"/>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6fg-ae-5e6">
-                                        <rect key="frame" x="207" y="0.0" width="138" height="22.5"/>
+                                        <rect key="frame" x="191.5" y="0.0" width="169.5" height="34.5"/>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ne2-KY-8Wq">
-                                        <rect key="frame" x="414" y="0.0" width="138" height="22.5"/>
+                                        <rect key="frame" x="382" y="0.0" width="170" height="34.5"/>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstItem="6fg-ae-5e6" firstAttribute="width" secondItem="wKm-cm-IUn" secondAttribute="width" multiplier="1:4" id="APu-KX-h8A"/>
-                                    <constraint firstItem="ne2-KY-8Wq" firstAttribute="width" secondItem="wKm-cm-IUn" secondAttribute="width" multiplier="1:4" id="OcZ-m8-bKe"/>
-                                    <constraint firstItem="SDJ-VL-McW" firstAttribute="width" secondItem="wKm-cm-IUn" secondAttribute="width" multiplier="1:4" id="ThP-xu-YLK"/>
+                                    <constraint firstItem="6fg-ae-5e6" firstAttribute="width" secondItem="wKm-cm-IUn" secondAttribute="width" multiplier="1:3.25" id="APu-KX-h8A"/>
+                                    <constraint firstItem="ne2-KY-8Wq" firstAttribute="width" secondItem="wKm-cm-IUn" secondAttribute="width" multiplier="1:3.25" id="OcZ-m8-bKe"/>
+                                    <constraint firstItem="SDJ-VL-McW" firstAttribute="width" secondItem="wKm-cm-IUn" secondAttribute="width" multiplier="1:3.25" id="ThP-xu-YLK"/>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FPE-5Q-DT7">
-                                <rect key="frame" x="20" y="72.5" width="560" height="54"/>
+                                <rect key="frame" x="20" y="84.5" width="560" height="54"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="No8-46-91s"/>
@@ -67,7 +67,7 @@
                                 </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LpP-0g-0P5">
-                                <rect key="frame" x="20" y="277" width="560" height="130.5"/>
+                                <rect key="frame" x="20" y="289" width="560" height="130.5"/>
                                 <subviews>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2s-x0-MX7" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="132.5" height="130.5"/>
@@ -77,7 +77,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="b2s-x0-MX7" secondAttribute="height" multiplier="66:65" id="mHc-eU-afs"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
                                         <state key="normal" title="7"/>
                                         <connections>
@@ -93,7 +93,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="fOZ-Z6-ikU" secondAttribute="height" multiplier="66:65" id="4ZS-Qa-J1d"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="8"/>
                                         <connections>
                                             <action selector="digitKeyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2OS-cd-SHf"/>
@@ -108,7 +108,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="8kN-i6-XLK" secondAttribute="height" multiplier="66:65" id="2l2-5b-sE4"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="9"/>
                                         <connections>
                                             <action selector="digitKeyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6A3-6K-n2A"/>
@@ -122,7 +122,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="3MF-3a-SFw" secondAttribute="height" multiplier="66:65" id="XUL-zW-wDE"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="÷"/>
                                         <connections>
                                             <action selector="operationKeyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I7h-us-aPE"/>
@@ -140,7 +140,7 @@
                                 </variation>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="op9-qN-9K5">
-                                <rect key="frame" x="20" y="417.5" width="560" height="130.5"/>
+                                <rect key="frame" x="20" y="429.5" width="560" height="130.5"/>
                                 <subviews>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbb-Qs-8Ar" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="132.5" height="130.5"/>
@@ -150,7 +150,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Wbb-Qs-8Ar" secondAttribute="height" multiplier="66:65" id="sem-M9-phn"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="4"/>
                                         <connections>
                                             <action selector="digitKeyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="61b-NN-h4N"/>
@@ -165,7 +165,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="cFm-gO-CId" secondAttribute="height" multiplier="66:65" id="3As-7W-3MM"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="5"/>
                                         <connections>
                                             <action selector="digitKeyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rtJ-Ab-p2B"/>
@@ -180,7 +180,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="2N2-yf-gCc" secondAttribute="height" multiplier="66:65" id="sgr-Xc-f5V"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="6"/>
                                         <connections>
                                             <action selector="digitKeyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ifz-2Y-zen"/>
@@ -194,7 +194,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="pog-0E-iCA" secondAttribute="height" multiplier="66:65" id="k4U-7H-ta1"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="×"/>
                                         <connections>
                                             <action selector="operationKeyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aXb-Lj-Ek4"/>
@@ -212,7 +212,7 @@
                                 </variation>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cOr-E8-Dkx">
-                                <rect key="frame" x="20" y="558" width="560" height="130.5"/>
+                                <rect key="frame" x="20" y="570" width="560" height="130.5"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPJ-uZ-vwJ" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="132.5" height="130.5"/>
@@ -222,7 +222,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="XPJ-uZ-vwJ" secondAttribute="height" multiplier="66:65" id="om0-Ly-i8G"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="1"/>
                                         <connections>
                                             <action selector="digitKeyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lqc-0l-wEy"/>
@@ -237,7 +237,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Em6-MX-Vpb" secondAttribute="height" multiplier="66:65" id="n30-My-hQr"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="2"/>
                                         <connections>
                                             <action selector="digitKeyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lcw-4e-7jc"/>
@@ -252,7 +252,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="R1h-sV-KTR" secondAttribute="height" multiplier="66:65" id="29p-OW-t9S"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="3"/>
                                         <connections>
                                             <action selector="digitKeyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bT4-fN-uZh"/>
@@ -266,7 +266,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="CJr-wx-nIY" secondAttribute="height" multiplier="66:65" id="Rzf-jH-MPs"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="−"/>
                                         <connections>
                                             <action selector="operationKeyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Er-AB-lQB"/>
@@ -284,7 +284,7 @@
                                 </variation>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Gn1-qh-wwK">
-                                <rect key="frame" x="20" y="698.5" width="560" height="130.5"/>
+                                <rect key="frame" x="20" y="710.5" width="560" height="130.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TmG-BI-F5g" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="132.5" height="130.5"/>
@@ -294,7 +294,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="TmG-BI-F5g" secondAttribute="height" multiplier="66:65" id="s5V-QX-fLY"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="0"/>
                                         <connections>
                                             <action selector="digitKeyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tTC-wj-NNR"/>
@@ -308,7 +308,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="MhT-9S-HyX" secondAttribute="height" multiplier="66:65" id="GME-ZK-Gzg"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="·"/>
                                         <connections>
                                             <action selector="digitKeyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9bQ-xR-8lT"/>
@@ -334,7 +334,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ZwJ-hr-JXX" secondAttribute="height" multiplier="66:65" id="JHg-ay-UbM"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="+"/>
                                         <connections>
                                             <action selector="operationKeyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UJc-S8-jQw"/>
@@ -352,7 +352,7 @@
                                 </variation>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yv9-d2-rdU">
-                                <rect key="frame" x="20" y="839" width="560" height="129"/>
+                                <rect key="frame" x="20" y="851" width="560" height="129"/>
                                 <subviews>
                                     <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHV-ua-0NX" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="278" height="129"/>
@@ -405,7 +405,7 @@
                                 </variation>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wpZ-4r-jxd">
-                                <rect key="frame" x="20" y="136.5" width="560" height="130.5"/>
+                                <rect key="frame" x="20" y="148.5" width="560" height="130.5"/>
                                 <subviews>
                                     <button opaque="NO" tag="202" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jg-Is-cY6" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="132.5" height="130.5"/>
@@ -415,7 +415,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="4jg-Is-cY6" secondAttribute="height" multiplier="66:65" id="T8k-zT-iYm"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
                                         <state key="normal" title="π"/>
                                         <connections>
@@ -430,7 +430,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="odn-6w-Fh1" secondAttribute="height" multiplier="66:65" id="jWB-bN-EuQ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                     </button>
                                     <button opaque="NO" tag="204" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUh-Ko-cB6" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="285" y="0.0" width="132.5" height="130.5"/>
@@ -440,7 +440,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="iUh-Ko-cB6" secondAttribute="height" multiplier="66:65" id="UUM-Ud-4DK"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="√"/>
                                         <connections>
                                             <action selector="operationKeyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rPo-tc-KoQ"/>
@@ -453,8 +453,8 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="auN-cd-AVf" secondAttribute="height" multiplier="66:65" id="POz-RM-w4A"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
-                                        <state key="normal" title="xⁿ"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="yˣ"/>
                                         <connections>
                                             <action selector="operationKeyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hdC-bx-r1T"/>
                                         </connections>
@@ -482,7 +482,7 @@
                             <constraint firstItem="LpP-0g-0P5" firstAttribute="top" secondItem="wpZ-4r-jxd" secondAttribute="bottom" constant="10" id="ISS-xj-1zE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cOr-E8-Dkx" secondAttribute="trailing" id="IZf-OD-1aF"/>
                             <constraint firstItem="cOr-E8-Dkx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="JG7-hX-c5R"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yv9-d2-rdU" secondAttribute="bottom" constant="32" id="KYE-rc-yQY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yv9-d2-rdU" secondAttribute="bottom" constant="20" id="KYE-rc-yQY"/>
                             <constraint firstItem="FPE-5Q-DT7" firstAttribute="top" secondItem="wKm-cm-IUn" secondAttribute="bottom" constant="10" id="QxS-TM-sue"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wKm-cm-IUn" secondAttribute="trailing" constant="4" id="R7m-Bj-aBI"/>
                             <constraint firstItem="yv9-d2-rdU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RyU-Cn-DoW"/>

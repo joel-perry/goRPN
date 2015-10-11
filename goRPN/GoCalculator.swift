@@ -15,7 +15,35 @@ enum StackOperation<T: IntegerLiteralConvertible> {
 }
 
 class GoCalculator<T: IntegerLiteralConvertible> {
-    var stack = [T]()
+    // MARK: Public
+    var xRegister: T {
+        get { return stack.count > 0 ? stack[0] : 0 }
+    }
+    
+    var yRegister: T {
+        get { return stack.count > 1 ? stack[1] : 0 }
+    }
+    
+    var zRegister: T {
+        get { return stack.count > 2 ? stack[2] : 0 }
+    }
+    
+    var tRegister: T {
+        get { return stack.count > 3 ? stack[3] : 0 }
+    }
+    
+    func loadStack() {
+        let savedStack = NSUserDefaults.standardUserDefaults().objectForKey("stack") as? [T]
+        stack = savedStack ?? newStack()
+    }
+    
+    func saveStack() {
+        NSUserDefaults.standardUserDefaults().setObject(stack as? AnyObject, forKey: "stack")
+    }
+    
+    func clearStack() {
+        stack = newStack()
+    }
     
     func performOperation(operation: StackOperation<T>) {
         switch operation {
@@ -32,14 +60,19 @@ class GoCalculator<T: IntegerLiteralConvertible> {
         balanceStack()
     }
     
-    func balanceStack() {
+    // MARK: Private
+    private var stack = [T]()
+    
+    // This currently limits stack size to 4 (like the HP-16c).
+    // Change first line to '>=' to enable unlimited stack size.
+    private func balanceStack() {
         if stack.count == 4 { return }
         if stack.count < 4 { stack.append(stack.last!) }
         else { stack.removeLast() }
         balanceStack()
     }
     
-    func newStack() -> [T] {
+    private func newStack() -> [T] {
         return [T](count: 4, repeatedValue: 0)
     }
 }

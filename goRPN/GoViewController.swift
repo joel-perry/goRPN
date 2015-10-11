@@ -20,6 +20,7 @@ class GoViewController: UIViewController {
     
     required init?(coder aDecoder: NSCoder) {
         calc = GoCalculator()
+        calc.loadStack()
         
         let savedDecimalPlaces = NSUserDefaults.standardUserDefaults().objectForKey("decimalPlaces") as? Int
         displayDecimalPlaces = savedDecimalPlaces ?? 2
@@ -27,9 +28,6 @@ class GoViewController: UIViewController {
         replaceX = true
         
         super.init(coder: aDecoder)
-        
-        let savedStack = NSUserDefaults.standardUserDefaults().objectForKey("stack") as? [Double]
-        calc.stack = savedStack ?? calc.newStack()
     }
     
     // MARK: UIView
@@ -42,15 +40,9 @@ class GoViewController: UIViewController {
         
         updateDisplay()
     }
-    
-    override func viewWillDisappear(animated: Bool) {
-        super.viewWillDisappear(animated)
-        NSUserDefaults.standardUserDefaults().setObject(calc.stack, forKey: "stack")
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
@@ -106,7 +98,7 @@ class GoViewController: UIViewController {
     }
     
     @IBAction func clearAllKeyPressed(sender: UIButton) {
-        calc.stack = calc.newStack()
+        calc.clearStack()
         updateDisplay()
         replaceX = true
     }
@@ -118,10 +110,10 @@ class GoViewController: UIViewController {
     
     // MARK: Utility
     func updateDisplay() {
-        xLabel.text! = calc.stack[0].decimalPlaces(displayDecimalPlaces)
-        yLabel.text! = "Y: " + calc.stack[1].decimalPlaces(displayDecimalPlaces)
-        zLabel.text! = "Z: " + calc.stack[2].decimalPlaces(displayDecimalPlaces)
-        tLabel.text! = "T: " + calc.stack[3].decimalPlaces(displayDecimalPlaces)
+        xLabel.text! = calc.xRegister.decimalPlaces(displayDecimalPlaces)
+        yLabel.text! = "y: " + calc.yRegister.decimalPlaces(displayDecimalPlaces)
+        zLabel.text! = "z: " + calc.zRegister.decimalPlaces(displayDecimalPlaces)
+        tLabel.text! = "t: " + calc.tRegister.decimalPlaces(displayDecimalPlaces)
     }
     
     func stringForTag(tag: Int) -> String {

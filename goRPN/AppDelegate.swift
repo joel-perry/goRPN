@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillResignActive(application: UIApplication) {
         if let vc = window!.rootViewController as? GoViewController {
-            NSUserDefaults.standardUserDefaults().setObject(vc.calc.stack, forKey: "stack")
+            vc.calc.saveStack()
         }
     }
 
