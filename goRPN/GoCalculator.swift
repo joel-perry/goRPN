@@ -29,6 +29,18 @@ class GoCalculator<T: IntegerLiteralConvertible> {
         case .Prefix(let op):
             stack.insert(op(number: stack.removeAtIndex(0)), atIndex: 0)
         }
+        balanceStack()
+    }
+    
+    func balanceStack() {
+        if stack.count == 4 { return }
+        if stack.count < 4 { stack.append(stack.last!) }
+        else { stack.removeLast() }
+        balanceStack()
+    }
+    
+    func newStack() -> [T] {
+        return [T](count: 4, repeatedValue: 0)
     }
 }
 

@@ -9,23 +9,27 @@
 import UIKit
 
 class GoViewController: UIViewController {
-    @IBOutlet weak var display: UILabel!
+    @IBOutlet weak var xLabel: UILabel!
+    @IBOutlet weak var yLabel: UILabel!
+    @IBOutlet weak var zLabel: UILabel!
+    @IBOutlet weak var tLabel: UILabel!
     
     let calc: GoCalculator<Double>
     var displayDecimalPlaces: Int
-    var replaceDisplay: Bool
+    var replaceX: Bool
     
     required init?(coder aDecoder: NSCoder) {
         calc = GoCalculator()
-        let savedStack = NSUserDefaults.standardUserDefaults().objectForKey("stack") as? [Double]
-        calc.stack = savedStack ?? [ 0.0 ]
         
         let savedDecimalPlaces = NSUserDefaults.standardUserDefaults().objectForKey("decimalPlaces") as? Int
         displayDecimalPlaces = savedDecimalPlaces ?? 2
         
-        replaceDisplay = true
+        replaceX = true
         
         super.init(coder: aDecoder)
+        
+        let savedStack = NSUserDefaults.standardUserDefaults().objectForKey("stack") as? [Double]
+        calc.stack = savedStack ?? calc.newStack()
     }
     
     // MARK: UIView
@@ -55,12 +59,12 @@ class GoViewController: UIViewController {
     
     // MARK: IBAction
     @IBAction func digitKeyPressed(sender: UIButton) {
-        if replaceDisplay {
-            display.text! = stringForTag(sender.tag)
-            replaceDisplay = false
+        if replaceX {
+            xLabel.text! = stringForTag(sender.tag)
+            replaceX = false
         } else {
-            if sender.tag == 10 && display.text!.characters.contains(".") { return }
-            display.text! += stringForTag(sender.tag)
+            if sender.tag == 10 && xLabel.text!.characters.contains(".") { return }
+            xLabel.text! += stringForTag(sender.tag)
         }
     }
     
@@ -71,8 +75,8 @@ class GoViewController: UIViewController {
     }
     
     @IBAction func operationKeyPressed(sender: UIButton) {
-        if !replaceDisplay {
-            calc.performOperation(.Push(display.text!.doubleValue))
+        if !replaceX {
+            calc.performOperation(.Push(xLabel.text!.doubleValue))
         }
         
         switch sender.tag {
@@ -98,24 +102,26 @@ class GoViewController: UIViewController {
             break
         }
         updateDisplay()
-        replaceDisplay = true
+        replaceX = true
     }
     
     @IBAction func clearAllKeyPressed(sender: UIButton) {
-        calc.stack.removeAll()
-        calc.performOperation(.Push(0.0))
+        calc.stack = calc.newStack()
         updateDisplay()
-        replaceDisplay = true
+        replaceX = true
     }
     
     @IBAction func clearDisplayKeyPressed(sender: UIButton) {
         updateDisplay()
-        replaceDisplay = true
+        replaceX = true
     }
     
     // MARK: Utility
     func updateDisplay() {
-        display.text! = calc.stack[0].decimalPlaces(displayDecimalPlaces)
+        xLabel.text! = calc.stack[0].decimalPlaces(displayDecimalPlaces)
+        yLabel.text! = "Y: " + calc.stack[1].decimalPlaces(displayDecimalPlaces)
+        zLabel.text! = "Z: " + calc.stack[2].decimalPlaces(displayDecimalPlaces)
+        tLabel.text! = "T: " + calc.stack[3].decimalPlaces(displayDecimalPlaces)
     }
     
     func stringForTag(tag: Int) -> String {
