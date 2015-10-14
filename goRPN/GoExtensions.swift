@@ -45,11 +45,14 @@ extension UIColor {
 }
 
 extension CAGradientLayer {
-    convenience init(startColor: UIColor, endColor: UIColor) {
-        self.init()
+    static func backgroundGradient() -> CAGradientLayer {
+        let startColor = UIColor(hex: 0x3F4F5F)
+        let endColor = UIColor(hex: 0x1F2F3F)
         let colors = [ startColor.CGColor, endColor.CGColor ]
-        self.colors = colors
-        self.startPoint = CGPointMake(0.5, 0.0)
-        self.endPoint = CGPointMake(0.5, 1.0)
+        let layer = CAGradientLayer()
+        layer.colors = colors
+        layer.startPoint = CGPointMake(0.5, 0.0)
+        layer.endPoint = CGPointMake(0.5, 1.0)
+        return layer
     }
 }

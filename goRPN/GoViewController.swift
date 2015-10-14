@@ -24,7 +24,6 @@ class GoViewController: UIViewController {
         
         let savedDecimalPlaces = NSUserDefaults.standardUserDefaults().objectForKey("decimalPlaces") as? Int
         displayDecimalPlaces = savedDecimalPlaces ?? 2
-        
         replaceX = true
         
         super.init(coder: aDecoder)
@@ -34,7 +33,7 @@ class GoViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
        
-        let gradientLayer = CAGradientLayer(startColor: UIColor(hex: 0x3F4F5F), endColor: UIColor(hex: 0x1F2F3F))
+        let gradientLayer = CAGradientLayer.backgroundGradient()
         gradientLayer.frame = self.view.frame
         self.view.layer.insertSublayer(gradientLayer, atIndex: 0)
         
