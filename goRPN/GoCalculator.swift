@@ -30,9 +30,9 @@ extension NumberConvertible {
     }
 }
 
-extension Double  : NumberConvertible {}
-extension Float   : NumberConvertible {}
-extension Int     : NumberConvertible {}
+extension Double: NumberConvertible {}
+extension Float: NumberConvertible {}
+extension Int: NumberConvertible {}
 
 enum StackOperation<T: NumberConvertible> {
     case Push(T)

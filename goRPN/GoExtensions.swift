@@ -31,6 +31,14 @@ extension String {
     var doubleValue: Double {
         return (self as NSString).doubleValue
     }
+    
+    var floatValue: Float {
+        return (self as NSString).floatValue
+    }
+    
+    var intValue: Int {
+        return (self as NSString).integerValue
+    }
 }
 
 extension UIColor {
