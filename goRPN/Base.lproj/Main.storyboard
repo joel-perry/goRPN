@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9058" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9048"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -24,27 +24,23 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SDJ-VL-McW">
                                         <rect key="frame" x="0.0" y="0.0" width="170" height="34.5"/>
-                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6fg-ae-5e6">
                                         <rect key="frame" x="191.5" y="0.0" width="169.5" height="34.5"/>
-                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ne2-KY-8Wq">
                                         <rect key="frame" x="382" y="0.0" width="170" height="34.5"/>
-                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <animations/>
                                 <constraints>
                                     <constraint firstItem="6fg-ae-5e6" firstAttribute="width" secondItem="wKm-cm-IUn" secondAttribute="width" multiplier="1:3.25" id="APu-KX-h8A"/>
                                     <constraint firstItem="ne2-KY-8Wq" firstAttribute="width" secondItem="wKm-cm-IUn" secondAttribute="width" multiplier="1:3.25" id="OcZ-m8-bKe"/>
@@ -53,7 +49,6 @@
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FPE-5Q-DT7">
                                 <rect key="frame" x="20" y="84.5" width="560" height="54"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="No8-46-91s"/>
                                 </constraints>
@@ -71,7 +66,6 @@
                                 <subviews>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2s-x0-MX7" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="132.5" height="130.5"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.57254901960000004" green="0.81176470590000005" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -87,7 +81,6 @@
                                     </button>
                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOZ-Z6-ikU" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="142.5" y="0.0" width="132.5" height="130.5"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.57254901960000004" green="0.81176470590000005" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -102,7 +95,6 @@
                                     </button>
                                     <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kN-i6-XLK" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="285" y="0.0" width="132.5" height="130.5"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.57254901960000004" green="0.81176470590000005" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -117,7 +109,6 @@
                                     </button>
                                     <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MF-3a-SFw" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="427.5" y="0.0" width="132.5" height="130.5"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.57254901960000004" green="0.81176470590000005" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="3MF-3a-SFw" secondAttribute="height" multiplier="66:65" id="XUL-zW-wDE"/>
@@ -129,7 +120,6 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="2R4-LX-JZc"/>
                                 </constraints>
@@ -144,7 +134,6 @@
                                 <subviews>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbb-Qs-8Ar" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="132.5" height="130.5"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.57254901960000004" green="0.81176470590000005" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -159,7 +148,6 @@
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFm-gO-CId" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="142.5" y="0.0" width="132.5" height="130.5"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.57254901960000004" green="0.81176470590000005" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -174,7 +162,6 @@
                                     </button>
                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2N2-yf-gCc" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="285" y="0.0" width="132.5" height="130.5"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.57254901960000004" green="0.81176470590000005" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -189,7 +176,6 @@
                                     </button>
                                     <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pog-0E-iCA" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="427.5" y="0.0" width="132.5" height="130.5"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.57254901960000004" green="0.81176470590000005" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="pog-0E-iCA" secondAttribute="height" multiplier="66:65" id="k4U-7H-ta1"/>
@@ -201,7 +187,6 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="StO-xC-M5c"/>
                                 </constraints>
@@ -216,7 +201,6 @@
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPJ-uZ-vwJ" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="132.5" height="130.5"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.57254901960000004" green="0.81176470590000005" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -231,7 +215,6 @@
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Em6-MX-Vpb" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="142.5" y="0.0" width="132.5" height="130.5"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.57254901960000004" green="0.81176470590000005" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -246,7 +229,6 @@
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1h-sV-KTR" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="285" y="0.0" width="132.5" height="130.5"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.57254901960000004" green="0.81176470590000005" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -261,7 +243,6 @@
                                     </button>
                                     <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJr-wx-nIY" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="427.5" y="0.0" width="132.5" height="130.5"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.57254901960000004" green="0.81176470590000005" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="CJr-wx-nIY" secondAttribute="height" multiplier="66:65" id="Rzf-jH-MPs"/>
@@ -273,7 +254,6 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="XmK-ji-pd8"/>
                                 </constraints>
@@ -288,7 +268,6 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TmG-BI-F5g" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="132.5" height="130.5"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.57254901960000004" green="0.81176470590000005" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -303,7 +282,6 @@
                                     </button>
                                     <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhT-9S-HyX" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="142.5" y="0.0" width="132.5" height="130.5"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.57254901960000004" green="0.81176470590000005" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="MhT-9S-HyX" secondAttribute="height" multiplier="66:65" id="GME-ZK-Gzg"/>
@@ -316,7 +294,6 @@
                                     </button>
                                     <button opaque="NO" tag="201" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lr1-hb-RRL" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="285" y="0.0" width="132.5" height="130.5"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.57254901960000004" green="0.81176470590000005" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Lr1-hb-RRL" secondAttribute="height" multiplier="66:65" id="l7t-Ls-BJD"/>
@@ -329,7 +306,6 @@
                                     </button>
                                     <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZwJ-hr-JXX" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="427.5" y="0.0" width="132.5" height="130.5"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.57254901960000004" green="0.81176470590000005" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ZwJ-hr-JXX" secondAttribute="height" multiplier="66:65" id="JHg-ay-UbM"/>
@@ -341,7 +317,6 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="RUB-As-QsP"/>
                                 </constraints>
@@ -356,7 +331,6 @@
                                 <subviews>
                                     <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHV-ua-0NX" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="278" height="129"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.57254901960000004" green="0.81176470590000005" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="VHV-ua-0NX" secondAttribute="height" multiplier="140:65" id="hQh-kf-QSc"/>
@@ -369,7 +343,6 @@
                                     </button>
                                     <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2F-8f-YrC" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="288" y="0.0" width="131" height="129"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.57254901960000004" green="0.81176470590000005" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="B2F-8f-YrC" secondAttribute="height" multiplier="66:65" id="Eu8-G7-Ywa"/>
@@ -382,7 +355,6 @@
                                     </button>
                                     <button opaque="NO" tag="51" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlU-Va-9A2" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="429" y="0.0" width="131" height="129"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.57254901960000004" green="0.81176470590000005" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="wlU-Va-9A2" secondAttribute="height" multiplier="66:65" id="3WC-8v-0ZQ"/>
@@ -394,7 +366,6 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="ZdU-Mf-kfq"/>
                                 </constraints>
@@ -409,7 +380,6 @@
                                 <subviews>
                                     <button opaque="NO" tag="202" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jg-Is-cY6" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="132.5" height="130.5"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.57254901960000004" green="0.81176470590000005" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -424,7 +394,6 @@
                                     </button>
                                     <button opaque="NO" tag="203" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odn-6w-Fh1" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="142.5" y="0.0" width="132.5" height="130.5"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.57254901960000004" green="0.81176470590000005" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -434,7 +403,6 @@
                                     </button>
                                     <button opaque="NO" tag="204" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUh-Ko-cB6" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="285" y="0.0" width="132.5" height="130.5"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.57254901960000004" green="0.81176470590000005" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -448,7 +416,6 @@
                                     </button>
                                     <button opaque="NO" tag="205" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auN-cd-AVf" customClass="GoButton" customModule="goRPN" customModuleProvider="target">
                                         <rect key="frame" x="427.5" y="0.0" width="132.5" height="130.5"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.57254901960000004" green="0.81176470590000005" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="auN-cd-AVf" secondAttribute="height" multiplier="66:65" id="POz-RM-w4A"/>
@@ -460,7 +427,6 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="Tmd-f1-jDk"/>
                                 </constraints>
@@ -471,7 +437,6 @@
                                 </variation>
                             </stackView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Gn1-qh-wwK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3c6-0r-cU9"/>

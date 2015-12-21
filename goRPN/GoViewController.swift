@@ -15,8 +15,8 @@ class GoViewController: UIViewController {
     @IBOutlet weak var tLabel: UILabel!
     
     let calc: GoCalculator<Double>
-    var displayDecimalPlaces: Int
-    var replaceX: Bool
+    private var displayDecimalPlaces: Int
+    private var replaceX: Bool
     
     required init?(coder aDecoder: NSCoder) {
         calc = GoCalculator()
@@ -108,14 +108,14 @@ class GoViewController: UIViewController {
     }
     
     // MARK: Utility
-    func updateDisplay() {
+    private func updateDisplay() {
         xLabel.text! = calc.xRegister.decimalPlaces(displayDecimalPlaces)
         yLabel.text! = "y: " + calc.yRegister.decimalPlaces(displayDecimalPlaces)
         zLabel.text! = "z: " + calc.zRegister.decimalPlaces(displayDecimalPlaces)
         tLabel.text! = "t: " + calc.tRegister.decimalPlaces(displayDecimalPlaces)
     }
     
-    func stringForTag(tag: Int) -> String {
+    private func stringForTag(tag: Int) -> String {
         if (tag == 10) { return "." }
         return String(tag)
     }
