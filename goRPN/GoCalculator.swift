@@ -42,25 +42,10 @@ enum StackOperation<T: NumberConvertible> {
 
 class GoCalculator<T: NumberConvertible> {
     // MARK: Public
-    var xRegister: T {
-        guard let x = stack.last else { return 0.convert() }
-        return x
-    }
-    
-    var yRegister: T {
-        guard let y = stack.dropLast().last else { return 0.convert() }
-        return y
-    }
-    
-    var zRegister: T {
-        guard let z = stack.dropLast(2).last else { return 0.convert() }
-        return z
-    }
-    
-    var tRegister: T {
-        guard let t = stack.dropLast(3).last else { return 0.convert() }
-        return t
-    }
+    var xRegister: T { return stack.last ?? 0.convert() }
+    var yRegister: T { return stack.dropLast().last ?? 0.convert() }
+    var zRegister: T { return stack.dropLast(2).last ?? 0.convert() }
+    var tRegister: T { return stack.dropLast(3).last ?? 0.convert() }
     
     func loadStack() {
         let savedStack = NSUserDefaults.standardUserDefaults().objectForKey("stack") as? [T]
