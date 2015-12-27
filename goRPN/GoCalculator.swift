@@ -34,33 +34,34 @@ extension Double: NumberConvertible {}
 extension Float: NumberConvertible {}
 extension Int: NumberConvertible {}
 
-enum StackOperation<T: NumberConvertible> {
+enum StackOperation<T> {
     case Push(T)
     case Infix((lhs: T, rhs: T) -> T)
     case Prefix((value: T) -> T)
 }
 
-class GoCalculator<T: NumberConvertible> {
-    // MARK: Public
+struct GoCalculator<T: NumberConvertible> {
+    private var stack: [T] = []
     var xRegister: T { return stack.last ?? 0.convert() }
     var yRegister: T { return stack.dropLast().last ?? 0.convert() }
     var zRegister: T { return stack.dropLast(2).last ?? 0.convert() }
     var tRegister: T { return stack.dropLast(3).last ?? 0.convert() }
     
-    func loadStack() {
-        let savedStack = NSUserDefaults.standardUserDefaults().objectForKey("stack") as? [T]
-        stack = savedStack ?? []
+    mutating func loadStack() {
+        if let savedStack = NSUserDefaults.standardUserDefaults().objectForKey("stack") as? [T] {
+            stack = savedStack
+        }
     }
     
     func saveStack() {
         NSUserDefaults.standardUserDefaults().setObject(stack as? AnyObject, forKey: "stack")
     }
     
-    func clearStack() {
-        stack = []
+    mutating func clearStack() {
+        stack.removeAll()
     }
     
-    func performOperation(operation: StackOperation<T>) {
+    mutating func performOperation(operation: StackOperation<T>) {
         switch operation {
         case .Push(let value):
             stack.append(value)
@@ -74,9 +75,6 @@ class GoCalculator<T: NumberConvertible> {
             stack.append(op(value: stack.removeLast()))
         }
     }
-    
-    // MARK: Private
-    private var stack: [T] = []
 }
 
 // MARK: Operators

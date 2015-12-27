@@ -14,7 +14,7 @@ class GoViewController: UIViewController {
     @IBOutlet weak var zLabel: UILabel!
     @IBOutlet weak var tLabel: UILabel!
     
-    let calc: GoCalculator<Double>
+    var calc: GoCalculator<Double>
     private var displayDecimalPlaces: Int
     private var replaceX: Bool
     
