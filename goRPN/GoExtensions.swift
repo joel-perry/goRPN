@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 extension Double {
-    func decimalPlaces(p: Int) -> String {
+    func decimalPlaces(_ p: Int) -> String {
         return String(format: "%.\(p)f", self)
     }
     func asBinary() -> String {
@@ -56,11 +56,11 @@ extension CAGradientLayer {
     static func backgroundGradient() -> CAGradientLayer {
         let startColor = UIColor(hex: 0x3F4F5F)
         let endColor = UIColor(hex: 0x1F2F3F)
-        let colors = [ startColor.CGColor, endColor.CGColor ]
+        let colors = [ startColor.cgColor, endColor.cgColor ]
         let layer = CAGradientLayer()
         layer.colors = colors
-        layer.startPoint = CGPointMake(0.5, 0.0)
-        layer.endPoint = CGPointMake(0.5, 1.0)
+        layer.startPoint = CGPoint(x: 0.5, y: 0.0)
+        layer.endPoint = CGPoint(x: 0.5, y: 1.0)
         return layer
     }
 }

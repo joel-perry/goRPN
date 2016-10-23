@@ -15,14 +15,14 @@ class GoViewController: UIViewController {
     @IBOutlet weak var tLabel: UILabel!
     
     var calc: GoCalculator<Double>
-    private var displayDecimalPlaces: Int
-    private var replaceX: Bool
+    fileprivate var displayDecimalPlaces: Int
+    fileprivate var replaceX: Bool
     
     required init?(coder aDecoder: NSCoder) {
         calc = GoCalculator()
         calc.loadStack()
         
-        let savedDecimalPlaces = NSUserDefaults.standardUserDefaults().objectForKey("decimalPlaces") as? Int
+        let savedDecimalPlaces = UserDefaults.standard.object(forKey: "decimalPlaces") as? Int
         displayDecimalPlaces = savedDecimalPlaces ?? 2
         replaceX = true
         
@@ -30,12 +30,12 @@ class GoViewController: UIViewController {
     }
     
     // MARK: UIView
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
        
         let gradientLayer = CAGradientLayer.backgroundGradient()
         gradientLayer.frame = self.view.frame
-        self.view.layer.insertSublayer(gradientLayer, atIndex: 0)
+        self.view.layer.insertSublayer(gradientLayer, at: 0)
         
         updateDisplay()
     }
@@ -44,12 +44,12 @@ class GoViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
     
     // MARK: IBAction
-    @IBAction func digitKeyPressed(sender: UIButton) {
+    @IBAction func digitKeyPressed(_ sender: UIButton) {
         if replaceX {
             xLabel.text! = stringForTag(sender.tag)
             replaceX = false
@@ -59,36 +59,36 @@ class GoViewController: UIViewController {
         }
     }
     
-    @IBAction func digitKeyLongPressed(sender: UILongPressGestureRecognizer) {
+    @IBAction func digitKeyLongPressed(_ sender: UILongPressGestureRecognizer) {
         displayDecimalPlaces = sender.view!.tag
         updateDisplay()
-        NSUserDefaults.standardUserDefaults().setInteger(displayDecimalPlaces, forKey: "decimalPlaces")
+        UserDefaults.standard.set(displayDecimalPlaces, forKey: "decimalPlaces")
     }
     
-    @IBAction func operationKeyPressed(sender: UIButton) {
+    @IBAction func operationKeyPressed(_ sender: UIButton) {
         if !replaceX {
-            calc.performOperation(.Push(xLabel.text!.doubleValue))
+            calc.performOperation(.push(xLabel.text!.doubleValue))
         }
         
         switch sender.tag {
         case 101:
-            calc.performOperation(.Infix(+))
+            calc.performOperation(.infix(+))
         case 102:
-            calc.performOperation(.Infix(-))
+            calc.performOperation(.infix(-))
         case 103:
-            calc.performOperation(.Infix(*))
+            calc.performOperation(.infix(*))
         case 104:
-            calc.performOperation(.Infix(/))
+            calc.performOperation(.infix(/))
         case 201:
-            calc.performOperation(.Prefix(-))
+            calc.performOperation(.prefix(-))
         case 202:
-            calc.performOperation(.Push(M_PI))
+            calc.performOperation(.push(M_PI))
         case 203:
             return
         case 204:
-            calc.performOperation(.Prefix(√))
+            calc.performOperation(.prefix(√))
         case 205:
-            calc.performOperation(.Infix(**))
+            calc.performOperation(.infix(**))
         default:
             break
         }
@@ -96,26 +96,26 @@ class GoViewController: UIViewController {
         replaceX = true
     }
     
-    @IBAction func clearAllKeyPressed(sender: UIButton) {
+    @IBAction func clearAllKeyPressed(_ sender: UIButton) {
         calc.clearStack()
         updateDisplay()
         replaceX = true
     }
     
-    @IBAction func clearDisplayKeyPressed(sender: UIButton) {
+    @IBAction func clearDisplayKeyPressed(_ sender: UIButton) {
         updateDisplay()
         replaceX = true
     }
     
     // MARK: Utility
-    private func updateDisplay() {
+    fileprivate func updateDisplay() {
         xLabel.text! = calc.xRegister.decimalPlaces(displayDecimalPlaces)
         yLabel.text! = "y: " + calc.yRegister.decimalPlaces(displayDecimalPlaces)
         zLabel.text! = "z: " + calc.zRegister.decimalPlaces(displayDecimalPlaces)
         tLabel.text! = "t: " + calc.tRegister.decimalPlaces(displayDecimalPlaces)
     }
     
-    private func stringForTag(tag: Int) -> String {
+    fileprivate func stringForTag(_ tag: Int) -> String {
         if (tag == 10) { return "." }
         return String(tag)
     }
