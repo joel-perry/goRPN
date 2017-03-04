@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		51C5E4B41BC93F4B00A274B4 /* GoCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C5E4B31BC93F4B00A274B4 /* GoCalculator.swift */; };
-		51C5E4B61BC990F300A274B4 /* GoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C5E4B51BC990F300A274B4 /* GoButton.swift */; };
 		5D1B465A1A8BA0D400BB6566 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1B46591A8BA0D400BB6566 /* AppDelegate.swift */; };
-		5D1B465C1A8BA0D400BB6566 /* GoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1B465B1A8BA0D400BB6566 /* GoViewController.swift */; };
 		5D1B465F1A8BA0D400BB6566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1B465D1A8BA0D400BB6566 /* Main.storyboard */; };
-		5D1B46611A8BA0D400BB6566 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D1B46601A8BA0D400BB6566 /* Images.xcassets */; };
 		5D1B46641A8BA0D400BB6566 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D1B46621A8BA0D400BB6566 /* LaunchScreen.xib */; };
 		5D1B46701A8BA0D400BB6566 /* goRPNTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1B466F1A8BA0D400BB6566 /* goRPNTests.swift */; };
-		5D1B467A1A8BA54200BB6566 /* GoExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1B46791A8BA54200BB6566 /* GoExtensions.swift */; };
+		5DB2DDFA1E6B6A0800F8F437 /* GoInfo.html in Resources */ = {isa = PBXBuildFile; fileRef = 5DB2DDF71E6B6A0800F8F437 /* GoInfo.html */; };
+		5DB2DDFB1E6B6A0800F8F437 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DB2DDF81E6B6A0800F8F437 /* Images.xcassets */; };
+		5DB2DDFE1E6B6A1A00F8F437 /* GoCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB2DDFD1E6B6A1A00F8F437 /* GoCalculator.swift */; };
+		5DB2DE021E6B6A3C00F8F437 /* GoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB2DDFF1E6B6A3C00F8F437 /* GoButton.swift */; };
+		5DB2DE031E6B6A3C00F8F437 /* GoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB2DE001E6B6A3C00F8F437 /* GoInfoViewController.swift */; };
+		5DB2DE041E6B6A3C00F8F437 /* GoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB2DE011E6B6A3C00F8F437 /* GoViewController.swift */; };
+		5DF44F281E6B6F0D00AA727F /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF44F271E6B6F0D00AA727F /* UIExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,19 +31,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		51C5E4B31BC93F4B00A274B4 /* GoCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoCalculator.swift; sourceTree = "<group>"; };
-		51C5E4B51BC990F300A274B4 /* GoButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoButton.swift; sourceTree = "<group>"; };
 		5D1B46541A8BA0D400BB6566 /* goRPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goRPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D1B46581A8BA0D400BB6566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D1B46591A8BA0D400BB6566 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5D1B465B1A8BA0D400BB6566 /* GoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoViewController.swift; sourceTree = "<group>"; };
 		5D1B465E1A8BA0D400BB6566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5D1B46601A8BA0D400BB6566 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5D1B46631A8BA0D400BB6566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5D1B46691A8BA0D400BB6566 /* goRPNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = goRPNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1B466E1A8BA0D400BB6566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D1B466F1A8BA0D400BB6566 /* goRPNTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goRPNTests.swift; sourceTree = "<group>"; };
-		5D1B46791A8BA54200BB6566 /* GoExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoExtensions.swift; sourceTree = "<group>"; };
+		5D4E1B6A1E6B6C9900C48508 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DB2DDF71E6B6A0800F8F437 /* GoInfo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = GoInfo.html; path = Resource/GoInfo.html; sourceTree = "<group>"; };
+		5DB2DDF81E6B6A0800F8F437 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Resource/Images.xcassets; sourceTree = "<group>"; };
+		5DB2DDFD1E6B6A1A00F8F437 /* GoCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoCalculator.swift; path = Calculator/GoCalculator.swift; sourceTree = "<group>"; };
+		5DB2DDFF1E6B6A3C00F8F437 /* GoButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoButton.swift; path = UI/GoButton.swift; sourceTree = "<group>"; };
+		5DB2DE001E6B6A3C00F8F437 /* GoInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoInfoViewController.swift; path = UI/GoInfoViewController.swift; sourceTree = "<group>"; };
+		5DB2DE011E6B6A3C00F8F437 /* GoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoViewController.swift; path = UI/GoViewController.swift; sourceTree = "<group>"; };
+		5DF44F271E6B6F0D00AA727F /* UIExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIExtensions.swift; path = UI/UIExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				5D1B46561A8BA0D400BB6566 /* goRPN */,
+				5DB2DDF61E6B69FA00F8F437 /* Supporting Files */,
 				5D1B466C1A8BA0D400BB6566 /* goRPNTests */,
 				5D1B46551A8BA0D400BB6566 /* Products */,
 			);
@@ -84,24 +89,10 @@
 			isa = PBXGroup;
 			children = (
 				5D1B46591A8BA0D400BB6566 /* AppDelegate.swift */,
-				5D1B465B1A8BA0D400BB6566 /* GoViewController.swift */,
-				51C5E4B31BC93F4B00A274B4 /* GoCalculator.swift */,
-				5D1B46791A8BA54200BB6566 /* GoExtensions.swift */,
-				51C5E4B51BC990F300A274B4 /* GoButton.swift */,
-				5D1B465D1A8BA0D400BB6566 /* Main.storyboard */,
-				5D1B46601A8BA0D400BB6566 /* Images.xcassets */,
-				5D1B46621A8BA0D400BB6566 /* LaunchScreen.xib */,
-				5D1B46571A8BA0D400BB6566 /* Supporting Files */,
+				5DB2DDF41E6B69EE00F8F437 /* Calculator */,
+				5DB2DDF51E6B69F500F8F437 /* UI */,
 			);
 			path = goRPN;
-			sourceTree = "<group>";
-		};
-		5D1B46571A8BA0D400BB6566 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5D1B46581A8BA0D400BB6566 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		5D1B466C1A8BA0D400BB6566 /* goRPNTests */ = {
@@ -121,6 +112,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5DB2DDF41E6B69EE00F8F437 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				5DB2DDFD1E6B6A1A00F8F437 /* GoCalculator.swift */,
+			);
+			name = Calculator;
+			sourceTree = "<group>";
+		};
+		5DB2DDF51E6B69F500F8F437 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5DB2DE011E6B6A3C00F8F437 /* GoViewController.swift */,
+				5DB2DE001E6B6A3C00F8F437 /* GoInfoViewController.swift */,
+				5DB2DDFF1E6B6A3C00F8F437 /* GoButton.swift */,
+				5D1B465D1A8BA0D400BB6566 /* Main.storyboard */,
+				5D1B46621A8BA0D400BB6566 /* LaunchScreen.xib */,
+				5DF44F271E6B6F0D00AA727F /* UIExtensions.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		5DB2DDF61E6B69FA00F8F437 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D4E1B6A1E6B6C9900C48508 /* Info.plist */,
+				5DB2DDF71E6B6A0800F8F437 /* GoInfo.html */,
+				5DB2DDF81E6B6A0800F8F437 /* Images.xcassets */,
+			);
+			name = "Supporting Files";
+			path = goRPN;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,6 +151,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D1B46731A8BA0D400BB6566 /* Build configuration list for PBXNativeTarget "goRPN" */;
 			buildPhases = (
+				5DF44F291E6B71FF00AA727F /* ShellScript */,
 				5D1B46501A8BA0D400BB6566 /* Sources */,
 				5D1B46511A8BA0D400BB6566 /* Frameworks */,
 				5D1B46521A8BA0D400BB6566 /* Resources */,
@@ -207,8 +231,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D1B465F1A8BA0D400BB6566 /* Main.storyboard in Resources */,
+				5DB2DDFB1E6B6A0800F8F437 /* Images.xcassets in Resources */,
+				5DB2DDFA1E6B6A0800F8F437 /* GoInfo.html in Resources */,
 				5D1B46641A8BA0D400BB6566 /* LaunchScreen.xib in Resources */,
-				5D1B46611A8BA0D400BB6566 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,16 +246,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5DF44F291E6B71FF00AA727F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5D1B46501A8BA0D400BB6566 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D1B465C1A8BA0D400BB6566 /* GoViewController.swift in Sources */,
-				51C5E4B41BC93F4B00A274B4 /* GoCalculator.swift in Sources */,
-				5D1B467A1A8BA54200BB6566 /* GoExtensions.swift in Sources */,
-				51C5E4B61BC990F300A274B4 /* GoButton.swift in Sources */,
+				5DB2DE041E6B6A3C00F8F437 /* GoViewController.swift in Sources */,
+				5DB2DDFE1E6B6A1A00F8F437 /* GoCalculator.swift in Sources */,
 				5D1B465A1A8BA0D400BB6566 /* AppDelegate.swift in Sources */,
+				5DF44F281E6B6F0D00AA727F /* UIExtensions.swift in Sources */,
+				5DB2DE031E6B6A3C00F8F437 /* GoInfoViewController.swift in Sources */,
+				5DB2DE021E6B6A3C00F8F437 /* GoButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +406,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/goRPN",
+				);
 				INFOPLIST_FILE = goRPN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -379,6 +425,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/goRPN",
+				);
 				INFOPLIST_FILE = goRPN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
